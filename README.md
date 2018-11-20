@@ -6,10 +6,9 @@ To use Greek Characters don't forget to use iconv
 $ npm install iconv
 ```
 ```js
+let printer = require("node-thermal-printer");
 let Iconv  = require('iconv').Iconv;
 let iconv = new Iconv('UTF-8', 'ISO-8859-7');
-...
-printer.add(iconv.convert("Καλωσήρθατε\n"));
 ```
 Then
 ```js
@@ -18,6 +17,7 @@ printer.init({
     characterSet: 'GREEK',
     ...
 });
+printer.add(iconv.convert("Καλωσήρθατε\n"));
 ```
 or if you prefer doing it manually
 ```js
@@ -29,8 +29,9 @@ or if you prefer doing it manually
 Node.js module for EPSON and STAR thermal printers command line printing.
 
 ### Installation
+No npm repository, sry
 ```bash
-$ npm install node-thermal-printer
+$ npm install https://github.com/cwi-vvatsos/node-thermal-printer
 ```
 
 
