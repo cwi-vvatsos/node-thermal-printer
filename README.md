@@ -1,6 +1,17 @@
 # Note
 Forked to support Alfa TP-80E (epson compatible) thermal printer
 
+To use Greek Characters don't forget to use iconv
+```bash
+$ npm install iconv
+```
+```js
+let Iconv  = require('iconv').Iconv;
+let iconv = new Iconv('UTF-8', 'ISO-8859-7');
+...
+printer.add(iconv.convert("Καλωσήρθατε\n"));
+```
+
 # node-thermal-printer
 Node.js module for EPSON and STAR thermal printers command line printing.
 
