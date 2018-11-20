@@ -57,6 +57,7 @@ module.exports = {
     CHARCODE_LATINA     : new Buffer([0x1b, 0x52, 0x0C]), // Latin America
     CHARCODE_KOREA      : new Buffer([0x1b, 0x52, 0x0D]), // Korea
     CHARCODE_SLOVENIA   : new Buffer([0x1b, 0x52, 0x0E]), // Slovenia
+    CHARCODE_GREEK      : new Buffer([0x1b, 0x52, 0x0F]), // Greek
     CHARCODE_CHINA      : new Buffer([0x1b, 0x52, 0x0F]), // China
     CHARCODE_VIETNAM    : new Buffer([0x1b, 0x52, 0x10]), // Vietnam
     CHARCODE_ARABIA     : new Buffer([0x1b, 0x52, 0x11]), // ARABIA
