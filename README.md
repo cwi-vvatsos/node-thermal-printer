@@ -11,6 +11,19 @@ let iconv = new Iconv('UTF-8', 'ISO-8859-7');
 ...
 printer.add(iconv.convert("Καλωσήρθατε\n"));
 ```
+Then
+```js
+printer.init({
+    ...
+    characterSet: 'GREEK',
+    ...
+});
+```
+or if you prefer doing it manually
+```js
+    printer.raw(new Buffer([0x1b, 0x52, 0x0F]));
+    printer.add(iconv.convert("Καλωσήρθατε\n"));
+```
 
 # node-thermal-printer
 Node.js module for EPSON and STAR thermal printers command line printing.
