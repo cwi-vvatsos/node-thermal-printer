@@ -9,6 +9,7 @@ $ npm install iconv
 let printer = require("node-thermal-printer");
 let Iconv  = require('iconv').Iconv;
 let iconv = new Iconv('UTF-8', 'ISO-8859-7');
+let Buffer = require('buffer').Buffer;
 ```
 Then
 ```js
